@@ -4,7 +4,8 @@ using System.Text;
 
 namespace EjercicioCine
 {
-    class Asientos
+    class Asientos:Salas
     {
+        public int NumAsiento { get; set; }
     }
 }
