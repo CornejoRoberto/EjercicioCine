@@ -6,5 +6,7 @@ namespace EjercicioCine
 {
     class Salas
     {
+        public int NumSala { get; set; }
+
     }
 }
