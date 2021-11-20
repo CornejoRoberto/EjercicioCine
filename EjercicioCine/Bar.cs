@@ -6,5 +6,8 @@ namespace EjercicioCine
 {
     class Bar
     {
+        public string Producto { get; set; }
+      
+
     }
 }
