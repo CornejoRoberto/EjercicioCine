@@ -7,8 +7,17 @@ namespace EjercicioCine
     class Bar
     {
         public string Producto { get; set; }
-        public String NumAsiento { get; set; }
-      
+     
+        public string ProductosIncluidos()
+        {
+            return this.Producto = "Nachos, Doritos, HotDog, Canguil";
+
+        }
+        public string ProductoSeleccionado()
+        {
+            return this.Producto ="";
+
+        }
 
     }
 }
