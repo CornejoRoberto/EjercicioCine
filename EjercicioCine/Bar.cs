@@ -10,7 +10,7 @@ namespace EjercicioCine
      
         public string ProductosIncluidos()
         {
-            return this.Producto = "Nachos, Doritos, HotDog, Canguil";
+            return this.Producto = "Nachos, Doritos, Papitas ,HotDog, Canguil";
 
         }
         public string ProductoSeleccionado()

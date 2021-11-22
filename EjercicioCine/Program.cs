@@ -21,10 +21,21 @@ namespace EjercicioCine
             peli3.Nombre = "Pikachu";
             peli3.Anio = 3;
             peli3.Duracion=120;
+            Peliculas peli4 = new Peliculas();
+            peli4.Nombre = "Avengers";
+            peli4.Anio = 4;
+            peli4.Duracion = 143;
+            Peliculas peli5 = new Peliculas();
+            peli5.Nombre = "Aladin";
+            peli5.Anio = 5;
+            peli5.Duracion = 90;
             List<Peliculas> Listacartelera = new List<Peliculas>();
             Listacartelera.Add(peli);
             Listacartelera.Add(peli2);
             Listacartelera.Add(peli3);
+            Listacartelera.Add(peli4);
+            Listacartelera.Add(peli5);
+
             Console.WriteLine("La lista de peliculas disponibles es:");
             foreach (Peliculas item in Listacartelera)
             {
@@ -81,6 +92,40 @@ namespace EjercicioCine
                 sala.NumAsiento = 12;
                 Console.WriteLine("Su asiento escogido fue el asiento:" + sala.NumAsiento + "\n" + "En la sala #3");
             }
+            else if (num1 == 4)
+            {
+                Console.WriteLine("SU SALA ESCOGIDA FUE LA SALA 4:");
+                Console.WriteLine("Con la pelicula de Avengers");
+                Console.WriteLine("ESCOJA SU ASIENTO");
+                while (num2 >= 2)
+                {
+                    num2--;
+                    Console.WriteLine("Asiento Disponible #" + num2);
+
+                }
+                //lLAMAMOS AL METODO ASIENTOS PARA ESCOJER NUESTRO NÚMERO DE ASIENTO
+                Asientos sala = new Asientos();
+                sala.NumAsiento = 11;
+                Console.WriteLine("Su asiento escogido fue el asiento:" + sala.NumAsiento + "\n" + "En la sala #4");
+            }
+            else if (num1 == 5)
+            {
+                Console.WriteLine("SU SALA ESCOGIDA FUE LA SALA 5:");
+                Console.WriteLine("Con la pelicula de Aladin");
+                Console.WriteLine("ESCOJA SU ASIENTO");
+                while (num2 >= 2)
+                {
+                    num2--;
+                    Console.WriteLine("Asiento Disponible #" + num2);
+
+                }
+                //lLAMAMOS AL METODO ASIENTOS PARA ESCOJER NUESTRO NÚMERO DE ASIENTO
+                Asientos sala = new Asientos();
+                sala.NumAsiento = 7;
+                Console.WriteLine("Su asiento escogido fue el asiento:" + sala.NumAsiento + "\n" + "En la sala #5");
+            }
+
+
             //Se muestra la cantidad de productos incluidos de manera gratuita por el cine
             Bar bar = new Bar();
                 Console.WriteLine("Los aperitivos gratuitos que inclueyen la entrada son: " + bar.ProductosIncluidos());
